@@ -5,11 +5,16 @@
     font-family: 'Raleway', sans-serif;
 }
 .img-fondo {
-    background-image: url(../image/2.jpg) ;
+    background-image: url(../image/casa/28.jpg) ;
      background-size: cover;
      background-position: center;
      background-attachment: fixed;
     }
+
+.derecha {
+    margin-left: 890px;
+    margin-top: 10px;
+}
 
 header{
     width: 100%;
@@ -24,27 +29,14 @@ header{
     margin: auto;
 }
 
-
-   
-
-.logo-title{
-    display: flex;
-}
-
 .logo-title img{
     width: 90px;
     margin-top: 3px;
-    margin-left: 7px;
+    margin-left: 1px;
 }
 
-.logo-title h4{
-    color: white;
-    font-weight: 100;
-    margin-left: 10px;
-    margin-top: 20px;
-}
 
-.icon-menu{
+.icon-menu1{
     position: absolute;
     right: 10px;
     top: 14px;
@@ -66,7 +58,16 @@ header{
 
 .cont {
     background-color: #3498db;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
     
+}
+
+.espacio-top{
+  
+    margin-bottom: 340px;
 }
 
 
@@ -120,6 +121,7 @@ header{
     font-size: 40px;
     font-weight: 100;
     margin-left: 10px;
+    text-shadow: 2px 2px 2px #101010;
 }
 
 .details p{
@@ -127,6 +129,8 @@ header{
     font-size: 20px;
     font-weight: 100;
     margin-left: 10px;
+    text-shadow: 2px 2px 2px #101010;
+
 }
 
 .details button{
@@ -142,10 +146,7 @@ header{
     margin-left: 10px;
 }
 
-.details button:hover{
-    background: white;
-    color: black;
-}
+
 
 
 /*Articulo*/
@@ -167,7 +168,51 @@ article h1{
     font-size: 40px;
     font-weight: 100;
     margin-left: 10px;
+    color: #142F57;
+    text-shadow: 2px 2px 2px #e9f3f5 ;
 }
+
+.medio{
+  text-align: center;
+}
+.posicion{
+height: 150px;
+  left: 0;
+  position: relative;
+  top: -320px;
+  width: 150px;
+  margin-left: 30px;
+}
+.cuadro{
+    width: 460px; 
+    height: 180px; 
+    border: 5px solid #142F57;
+    margin-left: 380px;
+    border-radius: 5px;
+  }
+  .cuadro2{
+    width: 400px; 
+    height: 320px; 
+    border: 5px solid #142F57;
+    margin-left: 380px;
+    border-radius: 5px;
+    margin-left: 800px;
+    margin-top: 80px;
+  }
+
+  .cuadro3{
+    width: 220px; 
+    height: 470px; 
+    border: 5px solid #142F57;
+    border-radius: 5px;
+    margin-left: 500px;
+  }
+
+ .cuadro h1{
+    margin-top: 20px;
+}
+
+
 
 article hr{
     max-width: 640px;
@@ -185,6 +230,7 @@ article p{
     margin-top: 20px;
     font-weight: 100;
     margin-left: 10px;
+    text-shadow: 2px 2px 2px #e9f3f5 ;
 }
 
 
@@ -194,6 +240,9 @@ article p{
         font-size: 18px;
     }
 }
+
+
+
 
 /*Articulodos*/
 
@@ -214,6 +263,8 @@ articledos h1{
     font-size: 40px;
     font-weight: 100;
     margin-left: 10px;
+    color: #142F57;
+    text-shadow: 2px 2px 2px #e9f3f5 ;
 }
 
 articledos hr{
@@ -232,6 +283,7 @@ articledos p{
     margin-top: 20px;
     font-weight: 100;
     margin-left: 10px;
+    text-align: center;
 }
 
 
@@ -242,15 +294,14 @@ articledos p{
     }
 }
 
-
-
-
-
+.negro{
+  color: #101010;
+}
 
 .container{
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -312,8 +363,12 @@ articledos p{
 footer{
     width: 100%;
     background: #202020;
-    color: white;   
-    
+    color: white;     
+}
+
+footer i{
+    padding: 6px;
+        
 }
 
 .container-footer-all{
@@ -357,8 +412,9 @@ footer{
 }
 
 .row img{
-    width: 36px;
-    height: 36px;
+    width: 65px;
+    margin-right: 10px;
+    
 }
 
 .row label{
@@ -418,6 +474,116 @@ footer{
     text-decoration: none;
     color: #C7C7C7;
 }
+.espacio{
+    padding: 11px 17px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+i:hover{
+    color:#4d0686;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+/* Galeria */
+
+
+.portafolio{
+    
+    margin-bottom: 10px;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(6, 75, 132, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 250px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
 
 
 @media screen and (max-width: 1100px){
@@ -435,6 +601,97 @@ footer{
         margin-top: 40px;
     }
 }
+
+
+
+/* Menu */
+
+.menues{
+    width: 100%;
+    height: 60px;
+    background-color: #101010;
+    position: fixed;
+    z-index: 100;
+}
+
+.img-logo{
+    width: 50px;
+    margin-right: 770px;
+}
+
+.menu1{
+    width: auto;
+    float:right;
+    margin-top: 19px;
+    margin-right: 10%;
+    
+}
+
+.menu1 ul{
+    display: flex;
+    margin-top: -70px;
+}
+.menu1 li{
+    list-style: none;
+}
+
+.menu1 li a{
+    padding: 9px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b7b7b7;
+}
+
+.menu1 li a:hover{
+    color: white;
+}
+
+#check{
+    display: none;
+}
+.icon-menu1{
+    display: none;
+}
+
+#check:checked ~ .menu1{
+    height: 174px;
+}
+
+@media screen and (max-width:900px){
+    .icon-menu1{
+        display: block;
+        color: white;
+        float: right;
+        padding: 5px;
+        font-size: 24px;
+        border: 1px solid #7a7a7a;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-right: 16px;
+    }
+    .icon-menu1:hover{
+        background: #3f3f3f;
+        cursor: pointer;
+    }
+    .menu1{
+        float: left;
+        margin-top: 0px;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        background: #1e1e1e;
+        transition: all 300ms;
+    }
+    
+    .menu1 ul{
+        flex-direction: column;
+    }
+    .menu1 li a{
+        display: block;
+    }
+}
+
 
 
 
