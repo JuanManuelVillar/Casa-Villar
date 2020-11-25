@@ -30,6 +30,8 @@ header{
     margin: auto;
 }
 
+
+
 .logo-title img{
     width: 90px;
     margin-top: 3px;
@@ -146,9 +148,6 @@ header{
     cursor: pointer;
     margin-left: 10px;
 }
-
-
-
 
 /*Articulo*/
 
@@ -690,6 +689,7 @@ a:hover{
         background: #1e1e1e;
         transition: all 300ms;
     }
+    
     
     .menu1 ul{
         flex-direction: column;
